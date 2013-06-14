@@ -1,5 +1,5 @@
 development:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: ey_sample_development
   pool: 5
@@ -8,7 +8,7 @@ development:
   socket: /tmp/mysql.sock
 
 test:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: ey_sample_test
   pool: 5
@@ -17,7 +17,7 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: ey_sample_production
   pool: 5
