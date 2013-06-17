@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/hrysd/lingman.git
+  revision: 9fa4f68191f9deffd7e2815863b051d5f5453d89
+  specs:
+    lingman (0.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -164,6 +170,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
+  lingman!
   mysql
   newrelic_rpm
   rails (= 4.0.0.rc2)

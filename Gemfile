@@ -50,6 +50,8 @@ gem 'unicorn', '4.6.0'
 
 gem 'newrelic_rpm'
 gem 'ey_config'
+gem 'lingman', git: 'git://github.com/hrysd/lingman.git', require: false
+
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
