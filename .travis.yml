@@ -11,4 +11,8 @@ branches:
   env:
     - DB=mysql
 notifications:
-  webhooks: http://lingr.com/api/room/say?room=ukitazume_devops&bot=opsbot&text=fromTravis&bot_verifier=3ea675da23605939f484a92a866c74057dccc904
+  campfire:
+    rooms:
+      - 473d191d:8bdd447ce9660a31941922d48ab4862807db49c5@566129
+    template:
+      - "%{repository} (%{commit}) : %{message} %{foo} "
