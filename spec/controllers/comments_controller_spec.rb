@@ -34,14 +34,6 @@ describe CommentsController do
     {}
   end
 
-  describe "GET index" do
-    it "assigns all comments as @comments" do
-      comment = Comment.create! valid_attributes
-      get :index, {}, valid_session
-      assigns(:comments).should eq([comment])
-    end
-  end
-
   describe "GET show" do
     it "assigns the requested comment as @comment" do
       comment = Comment.create! valid_attributes
@@ -104,15 +96,6 @@ describe CommentsController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested comment" do
-        comment = Comment.create! valid_attributes
-        # Assuming there are no other comments in the database, this
-        # specifies that the Comment created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Comment.any_instance.should_receive(:update_attributes).with({ "these" => "params" })
-        put :update, {:id => comment.to_param, :comment => { "these" => "params" }}, valid_session
-      end
 
       it "assigns the requested comment as @comment" do
         comment = Comment.create! valid_attributes
