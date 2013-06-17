@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'bundler'
 Bundler.setup(:default, Rails.env)
 require 'lingman'
 
