@@ -10,3 +10,5 @@ branches:
     - master
   env:
     - DB=mysql
+notifications:
+  webhooks: http://lingr.com/api/room/say?room=ukitazume_devops&bot=opsbot&text=%{repository}#%{build_number}&bot_verifier=3ea675da23605939f484a92a866c74057dccc904
