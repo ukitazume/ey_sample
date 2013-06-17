@@ -1,6 +1,5 @@
 require 'rubygems'
-require 'bundler'
-Bundler.setup(:default, :ci)
+require 'bundler/setup'
 require 'tinder'
 
 campfire = Tinder::Campfire.new '473d191d', :token => '8bdd447ce9660a31941922d48ab4862807db49c5'
