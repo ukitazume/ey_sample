@@ -1,5 +1,3 @@
-require 'lingman'
-
 Lingman::Updater.update(
   "opsbot", # BOT ID
   "ukitazume_devops", # ROOM ID
