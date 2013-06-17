@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler'
-Bundler.setup(:default, :ci)
+Bundler.setup(:default, :Rails.env)
 require 'lingman'
 
 Lingman::Updater.update(
