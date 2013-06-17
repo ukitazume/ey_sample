@@ -52,7 +52,7 @@ gem 'unicorn', '4.6.0'
 
 gem 'newrelic_rpm'
 gem 'ey_config'
-gem 'tinder', require: false
+gem 'tinder'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
