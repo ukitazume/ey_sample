@@ -17,6 +17,6 @@ class Access
   end
 
   def self.count
-    @@coll.count
+    @@coll.count rescue 0
   end
 end
