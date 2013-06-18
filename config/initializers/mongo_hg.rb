@@ -4,4 +4,4 @@ mongohq_connection_uri = case Rails.env
            when 'staging' then EY::Config.get(:mongohq, 'MONGOHQ_URL')
            else "mongodb://localhost:27017/#{db_name}"
            end
-$mongo_db = Mongo::Connection.from_uri mongohq_connection_uri
+$mongo_client = Mongo::Connection.from_uri mongohq_connection_uri
