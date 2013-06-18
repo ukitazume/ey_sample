@@ -21,16 +21,28 @@
     .container
       .row
         .span9
+          %h1= link_to 'EngineYard Sample App', '/'
           = bootstrap_flash
           = yield
         .span3
           .well.sidebar-nav
             = image_tag 'ey_logo.jpeg', :width => '100px'
+            %p
+              %span The Leading Platform as a Service
             %ul.nav.nav-list
               %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+              %li= link_to "EngineYard Site", "http://www.engineyard.co.jp/"
+              %li= link_to "EngineYard Cloud Dashboard", "https://cloud.engineyard.com/"
+            %ul.nav.nav-list
+              %li.nav-header Add-Ons
+              %li= link_to 'All', home_add_ons_path
+              %li= link_to 'NewRelic', home_add_ons_path
+          .well.sidebar-nav
+            %li.nav-header Twitter
+            :erb
+              <a class="twitter-timeline" href="https://twitter.com/search?q=engine+yard" data-widget-id="346856096406843393">engine yard に関するツイート</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     
       %footer
         %p &copy; Company 2013

@@ -4,6 +4,7 @@ EySample::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  get 'home/add_ons' => 'home#add_ons'
   resources :comments
 
   # Example of regular route:
