@@ -52,8 +52,8 @@ end
 gem 'unicorn', '4.6.0'
 
 gem 'newrelic_rpm'
-gem 'bson_ext'
 gem 'mongo'
+gem 'ey_config'
 gem 'tinder'
 
 # Use Capistrano for deployment
