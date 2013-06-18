@@ -42,6 +42,7 @@ end
 
 group :development do
   gem 'engineyard', require: false
+  gem 'pry-rails'
 end
 
 # Use ActiveModel has_secure_password
@@ -51,7 +52,8 @@ end
 gem 'unicorn', '4.6.0'
 
 gem 'newrelic_rpm'
-gem 'ey_config'
+gem 'bson_ext'
+gem 'mongo'
 gem 'tinder'
 
 # Use Capistrano for deployment
