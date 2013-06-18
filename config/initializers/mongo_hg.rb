@@ -1,4 +1,3 @@
-case Rails.env
 db_name = "#{Rails.application.class.parent_name.underscore}_#{Rails.env}"
 mongohq_connection_uri = case Rails.env
            when 'production' then EY::Config.get(:mongohq, 'MONGOHQ_URL')
