@@ -1,5 +1,5 @@
 class Access
-  @@coll = $mongo_client.db[self.name.underscore]
+  @@coll = $mongo_db[self.name.underscore]
 
   def self.set(request)
     @@coll.insert({remote_host: request.env['REMOTE_HOST'], created_at: Time.now})
