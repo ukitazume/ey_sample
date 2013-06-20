@@ -53,7 +53,7 @@ gem 'unicorn', '4.6.0'
 
 gem 'newrelic_rpm'
 gem 'bson_ext'
-gem 'cloudinary'
+# gem 'cloudinary'
 gem 'mongo'
 gem 'ey_config'
 gem 'tinder'
