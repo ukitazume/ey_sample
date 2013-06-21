@@ -4,5 +4,7 @@ class HomeController < ApplicationController
   end
 
   def add_ons
+    @access_tail = Access.tail
+    @access_count = Access.count
   end
 end

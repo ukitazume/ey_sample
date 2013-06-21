@@ -38,18 +38,6 @@
               %li= link_to 'All', home_add_ons_path
               %li= link_to 'NewRelic', home_add_ons_path
           .well.sidebar-nav
-            %li.nav-header
-              Access
-              (
-              = @access_count
-              )
-            %ol
-              - @access_tail.each do |access|
-                %li
-                  = access['remote_host']
-                  \:
-                  = access['created_at']
-          .well.sidebar-nav
             %li.nav-header Twitter
             :erb
               <a class="twitter-timeline" href="https://twitter.com/search?q=engine+yard" data-widget-id="346856096406843393">engine yard に関するツイート</a>

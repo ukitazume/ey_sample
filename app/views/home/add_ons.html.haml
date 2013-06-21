@@ -3,4 +3,13 @@
   :erb
     <iframe src="https://rpm.newrelic.com/public/charts/hsHBWlinvL" width="725" height="425" scrolling="no" frameborder="no"></iframe>
 .hero-unit
-  %h2 
+  %h2 MongoHQ
+  %ol
+    - @access_tail.each do |access|
+      %li
+        = access['remote_host']
+        \:
+        = access['created_at']
+  %h3
+    Total:
+    = @access_count
