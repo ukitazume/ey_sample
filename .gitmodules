@@ -1,0 +1,3 @@
+[submodule "ey-cloud-recipes"]
+	path = ey-cloud-recipes
+	url = git@github.com:engineyard/ey-cloud-recipes.git
