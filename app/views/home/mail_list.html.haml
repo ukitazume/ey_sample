@@ -1,2 +1,6 @@
 - @mail_list.each do |mail|
-  = mail
+  - unless mail.nil?
+    %p= mail['body']['From'] rescue '-'
+    %p= mail['body']['ToFull'].first['Subject'] rescue '-'
+    %p= mail['body']['ToFull'].first['Date'] rescue '-'
+    %p= mail['body']['ToFull'].first['TextBody'] rescue '-'
