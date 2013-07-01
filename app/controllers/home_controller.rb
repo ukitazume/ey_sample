@@ -7,4 +7,13 @@ class HomeController < ApplicationController
     @access_tail = Access.tail
     @access_count = Access.count
   end
+
+  def mail
+    Mail.set(request.body)
+  end
+
+  def mail_list
+    @mail_list = Mail.tail
+  end
 end
+
