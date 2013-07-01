@@ -11,6 +11,7 @@ class HomeController < ApplicationController
 
   def mail
     Mail.set(params)
+    render :text => 'ok', :status => 200
   end
 
   def mail_list
