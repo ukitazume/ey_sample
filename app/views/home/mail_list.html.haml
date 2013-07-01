@@ -1,6 +1,7 @@
 - @mail_list.each do |mail|
-  - unless mail and mail['body']
-    - body = mail['body']
-    - ["From", "FromFull", "To", "ToFull", "Cc", "CcFull", "ReplyTo", "Subject", "MessageID", "Date", "MailboxHash", "TextBody", "HtmlBody", "Tag", "Headers", "Attachments"].each do |key|
-      %p= body[key] rescue '-'
-    %br
+  - body = mail['body']
+  - ["From", "FromFull", "To", "ToFull", "Cc", "CcFull", "ReplyTo", "Subject", "MessageID", "Date", "MailboxHash", "TextBody", "HtmlBody", "Tag", "Headers", "Attachments"].each do |key|
+    %p
+      %span= key
+      = body[key] || '--'
+  %hr
