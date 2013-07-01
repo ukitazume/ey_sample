@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   end
 
   def mail
-    Mail.set(request.body)
+    Mail.set(params)
   end
 
   def mail_list
