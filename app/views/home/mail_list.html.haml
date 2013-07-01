@@ -1,6 +1,6 @@
 - @mail_list.each do |mail|
-  - unless mail.nil?
-    %p= mail['body']['From'] rescue '-'
-    %p= mail['body']['ToFull'].first['Subject'] rescue '-'
-    %p= mail['body']['ToFull'].first['Date'] rescue '-'
-    %p= mail['body']['ToFull'].first['TextBody'] rescue '-'
+  - unless mail and mail['body']
+    - body = mail['body']
+    - ["From", "FromFull", "To", "ToFull", "Cc", "CcFull", "ReplyTo", "Subject", "MessageID", "Date", "MailboxHash", "TextBody", "HtmlBody", "Tag", "Headers", "Attachments"].each do |key|
+      %p= body[key] rescue '-'
+    %br
