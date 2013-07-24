@@ -33,6 +33,4 @@ defaults:
   precompile_assets_task: assets:custom
   precompile_unchanged_assets: true
   assets_roles:
-    - :app
     - :app_master
-    - :util
