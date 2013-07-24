@@ -30,6 +30,6 @@ environments:
 defaults:
   migrate: false
   precompile_assets: true
-  precomplie_assets_task: assets:custom
+  precompile_assets_task: assets:custom
   precompile_unchanged_assets: true
 
