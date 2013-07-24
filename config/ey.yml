@@ -29,5 +29,5 @@ environments:
   ey_sample_stg: {}
 defaults:
   migrate: false
-  # precompile_assets: true
-  precompile_unchanged_assets: true
+  precompile_assets: true
+  precompile_unchanged_assets: false
