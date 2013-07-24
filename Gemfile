@@ -57,6 +57,7 @@ gem 'bson_ext'
 gem 'mongo'
 gem 'ey_config'
 gem 'tinder'
+gem 'dalli'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

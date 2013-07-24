@@ -51,6 +51,7 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     commonjs (0.2.6)
+    dalli (2.6.4)
     diff-lcs (1.1.3)
     engineyard (2.1.2)
       engineyard-cloud-client (~> 1.0.12)
@@ -216,6 +217,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   coffee-rails (~> 4.0.0)
+  dalli
   engineyard
   ey_config
   haml-rails
