@@ -59,6 +59,7 @@ gem 'mongo'
 gem 'ey_config'
 gem 'tinder'
 gem 'dalli'
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

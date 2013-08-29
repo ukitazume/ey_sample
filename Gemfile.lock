@@ -119,6 +119,7 @@ GEM
     net-ssh (2.6.7)
     newrelic_rpm (3.6.3.111)
     oj (2.1.4)
+    pg (0.16.0)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -229,6 +230,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   oj
+  pg
   pry-rails
   rails (= 4.0.0.rc2)
   rspec-rails
