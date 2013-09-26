@@ -75,7 +75,7 @@
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
 #include_recipe "env_vars"
-include_recipe "jenkins"
+# include_recipe "jenkins"
 
 #include_recipe "timezone"
 #include_recipe "papertrail"
