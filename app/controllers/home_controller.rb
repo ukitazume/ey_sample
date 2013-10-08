@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   skip_before_action :verify_authenticity_token, :only => [:mail]
   def index
-    Access.set(request)
   end
 
   def add_ons
