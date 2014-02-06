@@ -7,4 +7,3 @@
 # 
 # room = campfire.find_room_by_id '566129'
 # room.speak "#{revision} is deployed #{environment_name} by #{deployed_by}."
-p config.deployed_by
