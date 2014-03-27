@@ -7,3 +7,6 @@
 # 
 # room = campfire.find_room_by_id '566129'
 # room.speak "#{revision} is deployed #{environment_name} by #{deployed_by}."
+on_app_master do
+  sudo("touch /tmp/on_master")
+end
