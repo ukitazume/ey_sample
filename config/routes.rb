@@ -7,6 +7,7 @@ EySample::Application.routes.draw do
   get 'home/add_ons' => 'home#add_ons'
   post '/mail' => 'home#mail'
   get '/mail_list' => 'home#mail_list'
+  get '/admin' => 'application#admin'
   resources :comments
 
   # Example of regular route:

@@ -3,6 +3,8 @@
 #    echo "i ran at #{Time.now}" >> /root/cheftime
 #  }
 #end
+include_recipe "le"
+include_recipe "custom_nginx"
 
 # uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # include_recipe "sphinx"
