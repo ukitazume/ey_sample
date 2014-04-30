@@ -60,6 +60,8 @@ gem 'ey_config'
 gem 'tinder'
 gem 'dalli'
 gem 'pg'
+gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
+
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
