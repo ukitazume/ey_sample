@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 0.4.0', require: false
 end
 
 group :development, :test do
@@ -60,7 +60,7 @@ gem 'ey_config'
 gem 'tinder'
 gem 'dalli'
 gem 'pg'
-gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
+gem "resque", "2.0.0"
 
 
 # Use Capistrano for deployment
