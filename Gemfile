@@ -23,7 +23,7 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem "haml-rails"
 gem 'less-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
