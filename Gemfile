@@ -42,7 +42,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'engineyard', require: false
+  gem 'engineyard', '>= 2.1.2', require: false
   gem 'pry-rails'
 end
 
